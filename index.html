@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tip Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link href="./src/styles.css"rel="stylesheet"/>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="leftColumn">
+        <div class="bill">
+           <label for="billAmount"id="billLabel">Bill</label>
+           <input type="text" id="billEntry" placeholder="0">
+        </div>
+        <div class="people">
+          <label for="numberOfPeople"id="numberOfPeople">Number of People</label>
+          <input type="text" id="peopleEntry" placeholder="0">
+       </div>
+        <div class="tips">
+           <h5>select tip %</h5>
+           <div class="tipButtons">
+             <button class="button" id="fivePercent">5%</button>
+             <button class="button" id="tenPercent">10%</button>
+             <button class="button" id="fifteenPercent">15%</button>
+             <button class="button" id="twentyFivePercent">25%</button>
+             <button class="button" id="fiftyPercent">50%</button>
+             <input type="text" id="customTip" placeholder="custom">
+           </div>
+         </div>
+      </div>
+      <div class="rightColumn">
+        <div class="tipResult">
+          <div class="leftSide">
+            <h5>Tip Amount</h5>
+            <p>/ person</p>
+          </div>
+          <div class="rightSide">
+           <!-- <input type="text"id="tipAmount"placeholder="$0.00"/> -->
+           <div id="tipAmount"><p>$ 0.00</p></div> 
+          </div>
+        </div>
+        <div class="totalAmount">
+            <div class="leftSide">
+              <h5>Total</h5>
+              <p>/ person</p>
+            </div>
+            <div class="rightSide">
+              <!-- <input type="text"id="tipAmount"placeholder="$0.00"/>-->
+              <div id="finalAmount"><p>$ 0.00</p></div> 
+            </div>
+          </div>
+         <button class="reset" id="reset">reset</button>
+      </div>
+    <script src="src/index.ts"></script>
+  </body>
+</html>

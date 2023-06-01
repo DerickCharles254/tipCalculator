@@ -1,0 +1,185 @@
+#app {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: fit-content;
+  border: solid 1px;
+}
+.leftColumn,
+.rightColumn {
+  padding: 1em;
+}
+.rightColumn {
+  border-radius: 30px;
+}
+.bill,
+.people {
+  border: solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.bill input,
+.people input {
+  padding: 0.5em;
+  padding-block: 0.8em;
+  background-color: rgb(233, 233, 233);
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+}
+.tips h5,
+.bill label,
+.people label {
+  text-transform: capitalize;
+  font-size: 18px;
+  opacity: 70%;
+  font-weight: 700;
+}
+.tipButtons {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.tips {
+  padding-bottom: 20px;
+}
+.button {
+  padding-inline: 2em;
+  padding-block: 0.8em;
+  border: none;
+  background-color: rgb(3, 92, 0);
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+}
+.button1 {
+  padding-inline: 2em;
+  padding-block: 0.8em;
+  border: none;
+  background-color: rgb(2, 185, 185);
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  margin-left: 35px;
+}
+#customTip {
+  width: 5.5em;
+  border: none;
+  background-color: gainsboro;
+  border-radius: 5px;
+  text-align: center;
+}
+.tipResult,
+.totalAmount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tipResult {
+  margin-bottom: 3em;
+}
+.totalAmount {
+  margin-bottom: 4em;
+}
+#reset {
+  border: solid red;
+  margin-top: -1em;
+}
+.leftSide,
+.rightSide {
+  font-weight: 700;
+  font-size: 18px;
+  width: fit-content;
+  height: fit-content;
+}
+.rightSide {
+  width: 10em;
+}
+.leftSide p {
+  margin-top: -20px;
+  font-weight: 400;
+  font-size: 14px;
+}
+#tipAmount {
+  font-size: 20px;
+  width: 70%;
+  padding-block: 0.2em;
+  border: solid 1px black;
+  background-color: transparent;
+  border-radius: 5px;
+  padding-left: 1em;
+  color: rgb(80, 201, 0);
+  margin-left: 0.5em;
+}
+#finalAmount {
+  font-size: 20px;
+  width: 70%;
+  border: solid 1px black;
+  background-color: transparent;
+  border-radius: 5px;
+  padding-left: 1em;
+  padding-block: 0.2em;
+  color: rgb(80, 201, 0);
+  margin-left: 0.5em;
+}
+.rightSide ::placeholder {
+  color: rgb(80, 201, 0);
+  opacity: 60%;
+}
+.rightSide :hover {
+  cursor: pointer;
+}
+.reset {
+  text-align: center;
+  width: 20em;
+  padding: 0.8em;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  margin-top: 10em;
+  background-color: rgb(19, 194, 194);
+  border-radius: 5px;
+  color: white;
+}
+.rightColumn {
+  padding-left: 2.5em;
+  background-color: rgb(0, 80, 80);
+}
+@media (max-width: 576px) {
+  #app {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+  .rightColumn {
+    border-radius: 30px;
+    padding-block: 2em;
+  }
+  .leftColumn {
+    margin-bottom: 5em;
+    padding-inline: 2em;
+    padding-block: 2em;
+  }
+  .tipResult {
+    margin-bottom: 3em;
+  }
+  .totalAmount {
+    margin-bottom: 3em;
+  }
+  #reset {
+    border: solid;
+    margin-top: -0.5em;
+    align-items: center;
+    margin-left: 1em;
+  }
+}
+@media (min-width: 577px) {
+  body {
+    padding-inline: 20px;
+    padding-block: 30px;
+  }
+  #app {
+    padding-block: 2em;
+    padding-inline: 2em;
+  }
+}
